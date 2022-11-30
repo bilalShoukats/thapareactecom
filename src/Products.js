@@ -1,8 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-
+import HeroSection from "./components/HeroSection";
+import Services from "./components/Services";
+import Trusted from "./components/Trusted";
 const Products = () => {
-  return <Wrapper></Wrapper>;
+
+ 
+  const data = {
+    name: "ali store",
+  };
+  return <div>
+  <HeroSection  myData={data}/>
+  
+  
+  </div>;
 };
 
 const Wrapper = styled.section`

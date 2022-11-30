@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HeroSection from "./components/HeroSection";
 
 const Contact = () => {
   const Wrapper = styled.section`
@@ -33,7 +34,15 @@ const Contact = () => {
     }
   `;
 
-  return <Wrapper></Wrapper>;
+  const datas = {
+    name: "Super store",
+    paragraps: "Super.......",
+  };
+  return (
+    <>
+      <HeroSection myData={datas} />
+    </>
+  );
 };
 
 export default Contact;
